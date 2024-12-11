@@ -1,5 +1,7 @@
 #cloud-config
 autoinstall:
+  source:
+    id: ubuntu-server-minimal
   # version is an Autoinstall required field.
   version: 1
 
@@ -38,6 +40,7 @@ autoinstall:
   # Ubuntu Desktop uses the hwe flavor kernel by default.
   # early-commands:
   # - echo 'linux-generic-hwe-22.04' > /run/kernel-meta-package
+
 
   # The live-server ISO does not contain some of the required packages,
   # such as ubuntu-desktop or the hwe kernel (or most of their depdendencies).
